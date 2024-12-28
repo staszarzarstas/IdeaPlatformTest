@@ -1,0 +1,88 @@
+.app {
+    display: flex;
+    font-family: Arial, sans-serif;
+    display: flex;
+    width: 100vw;
+
+
+  }
+  
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+  }
+  
+  .ticket-list {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .ticket {
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    /* padding: 10px;  */
+  
+  }
+  
+  .ticket-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ticket-price {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .ticket-body {
+    margin-top: 10px;
+  }
+  
+  .filters label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+
+  body {
+    background: rgb(243,247,250);
+  }
+
+
+.app {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 25%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f7f7f7;
+}
+
+.ticket-list {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .app {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .sidebar {
+      width: 100%;
+      padding: 15px;
+      border-radius: 0;
+  }
+
+  .ticket-list {
+      width: 100%;
+  }
+}
